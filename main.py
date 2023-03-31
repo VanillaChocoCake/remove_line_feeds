@@ -1,8 +1,9 @@
 import re
 import pyperclip
 import time
+
 pre_content = content = pyperclip.paste()
-print("Will remove all \\n")
+print("Will remove all \\n in clipboard")
 while True:
     content = pyperclip.paste()
     if pre_content != content:
